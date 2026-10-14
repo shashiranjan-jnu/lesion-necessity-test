@@ -16,9 +16,9 @@ authors:
     orcid: "https://orcid.org/0009-0007-6247-0517"
 repository-code: "https://github.com/shashiranjan-jnu/lesion-necessity-test"
 keywords:
-  - benchmark validation
   - shortcut learning
+  - occlusion analysis
+  - data leakage
   - explainable artificial intelligence
-  - saliency map evaluation
+  - attribution evaluation
   - data curation
-  - magnetic resonance imaging

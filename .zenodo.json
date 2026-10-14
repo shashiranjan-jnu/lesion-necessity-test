@@ -3,10 +3,25 @@
   "upload_type": "software",
   "description": "Code and saved per-fold outputs for the lesion-necessity test: classifiers are retrained with the annotated lesion deleted or isolated under identical subject-grouped folds and seeds, and each contrast is judged with a patient-clustered bootstrap interval. Applied to the Cheng et al. brain tumor MRI collection with a HAM10000 positive control. Source images are not redistributed.",
   "creators": [
-    {"name": "Ranjan, Shashi", "affiliation": "Jawaharlal Nehru University", "orcid": "0009-0002-4069-5399"},
-    {"name": "N, Poonguzhali", "affiliation": "Jawaharlal Nehru University", "orcid": "0009-0007-6247-0517"}
+    {
+      "name": "Ranjan, Shashi",
+      "affiliation": "Jawaharlal Nehru University",
+      "orcid": "0009-0002-4069-5399"
+    },
+    {
+      "name": "N, Poonguzhali",
+      "affiliation": "Jawaharlal Nehru University",
+      "orcid": "0009-0007-6247-0517"
+    }
   ],
   "license": "MIT",
-  "keywords": ["benchmark validation", "shortcut learning", "explainable artificial intelligence", "saliency map evaluation", "data curation", "magnetic resonance imaging"],
+  "keywords": [
+    "shortcut learning",
+    "occlusion analysis",
+    "data leakage",
+    "explainable artificial intelligence",
+    "attribution evaluation",
+    "data curation"
+  ],
   "access_right": "open"
 }
