@@ -4,6 +4,7 @@ title: "A Lesion-Necessity Test for Public Imaging Benchmarks: Brain Tumor MRI C
 type: software
 version: 1.0.0
 license: MIT
+doi: 10.5281/zenodo.23360008
 authors:
   - family-names: Ranjan
     given-names: Shashi

@@ -1,5 +1,7 @@
 # A Lesion-Necessity Test for Public Imaging Benchmarks
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23360008.svg)](https://doi.org/10.5281/zenodo.23360008)
+
 Code and saved outputs for the manuscript
 
 > **A Lesion-Necessity Test for Public Imaging Benchmarks: Brain Tumor MRI
@@ -81,7 +83,8 @@ per-fold macro-F1 values of Table 1 to four decimal places.
 
 ## Citation
 
-See `CITATION.cff`. Please also cite the data sources listed above.
+Code archive: Zenodo, DOI [10.5281/zenodo.23360008](https://doi.org/10.5281/zenodo.23360008)
+(all versions). See `CITATION.cff`. Please also cite the data sources listed above.
 
 ## Licence
 
