@@ -1,0 +1,20 @@
+
+H0 | 2203 images, 1228 lesions, mel 1113 / nv 1090
+
+T3 | mask geometry by class (mean +- sd), full selected set
+  field                      nv                mel          F
+  area          0.223+-0.185       0.325+-0.202         150.5   d=0.52
+  cy            0.502+-0.040       0.497+-0.038           7.4   d=0.12
+  cx            0.499+-0.038       0.498+-0.033           0.0   d=0.00
+  height        0.550+-0.234       0.678+-0.226         171.7   d=0.56
+  width         0.469+-0.225       0.600+-0.230         181.6   d=0.57
+
+T1/T2 | can the ANNOTATION alone predict the class? (no pixels)
+  5 scalars (incl. area)       macro-F1 0.6151   acc 0.6160   AUROC 0.6640
+  centroids only               macro-F1 0.5388   acc 0.5388   AUROC 0.5353
+  area only                    macro-F1 0.6112   acc 0.6123   AUROC 0.6574
+
+  Chance is 0.500. Whatever this reaches is the floor for the
+  occluded condition: an occluded model can score at least this
+  well from the hole alone, before using any skin.
+

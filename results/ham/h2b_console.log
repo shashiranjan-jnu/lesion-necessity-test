@@ -1,0 +1,15 @@
+
+H2b | 150 images, mean mask area 0.2635
+
+  fixed map       pointing    energy       IoU
+  centre_disk        0.640     0.824     0.706
+  centre_gauss       0.993     0.466     0.706
+  uniform            0.007     0.263     0.114
+
+saved /kaggle/working/h2b_centreprior.json
+
+  Compare with H2: intact Grad-CAM pointing 0.653, IoU 0.379;
+  untrained 0.693 / 0.406. If a model-free centred map is in that
+  range, the metrics are measuring the frame, not the model, and no
+  attribution claim can be made on this collection.
+

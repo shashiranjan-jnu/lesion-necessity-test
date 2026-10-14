@@ -1,0 +1,46 @@
+A6i | notumor leakage control
+
+loading...
+  notumor      1800 images
+  glioma       1800 images
+  meningioma   1800 images
+  pituitary    1800 images
+
+==============================================================
+1 | near-duplicate structure of notumor (Br35H)
+
+   thresh  clusters  largest  singletons  mean size
+    0.999       873       19         451       2.06
+    0.990       672       22         292       2.68
+    0.980       571       28         226       3.15
+    0.950       466       40         175       3.86
+
+  many small clusters -> little redundancy; a few large ones ->
+  repeated slices that would leak across an ungrouped split
+
+==============================================================
+2 | notumor vs each tumor class
+
+  comparison                  ungrouped  clustered    delta
+  --------------------------------------------------------
+  notumor vs glioma              0.6983     0.6974    -0.1
+  notumor vs meningioma          0.7211     0.7172    -0.4
+  notumor vs pituitary           0.7019     0.6939    -0.8
+
+==============================================================
+3 | cluster-level classification (one point per notumor cluster)
+
+  notumor(672 clusters) vs glioma(672): macro-F1 0.7291
+  notumor(672 clusters) vs meningioma(672): macro-F1 0.7165
+  notumor(672 clusters) vs pituitary(672): macro-F1 0.7009
+
+==============================================================
+4 | sensitivity to the clustering threshold (vs glioma)
+
+  thresh 0.999  ( 873 clusters)  macro-F1 0.6991
+  thresh 0.990  ( 672 clusters)  macro-F1 0.6963
+  thresh 0.980  ( 571 clusters)  macro-F1 0.6983
+  thresh 0.950  ( 466 clusters)  macro-F1 0.6918
+
+  if macro-F1 holds near 0.70 across thresholds, the separation is
+  class signal, not patient memorisation

@@ -1,0 +1,33 @@
+matched subset: 1524 images, 840 lesions, mel 791 / nv 733
+
+======================================================================
+resnet18-bn  (224px, lr 0.0001, 3 seeds x 5 folds, flips+rot90)
+
+  intact       F1 0.7569 +- 0.0134   acc 0.7582   AUROC 0.8374   per-fold ['0.760', '0.762', '0.766', '0.766', '0.731']
+  occlude      F1 0.6920 +- 0.0112   acc 0.6939   AUROC 0.7576   per-fold ['0.694', '0.683', '0.690', '0.712', '0.681']
+  occlude+10   F1 0.6828 +- 0.0080   acc 0.6841   AUROC 0.7459   per-fold ['0.683', '0.694', '0.671', '0.688', '0.678']
+  lesion_only  F1 0.7292 +- 0.0274   acc 0.7300   AUROC 0.8064   per-fold ['0.749', '0.681', '0.757', '0.740', '0.719']
+
+  variance (intact): partition sd 1.08 pts, seed sd 1.88 pts
+
+  paired vs intact (lesion-clustered bootstrap, 2000 reps):
+    occlude      dAcc -6.41 pts  95% CI [-8.67, -3.98]  excludes 0   paired sd 2.36  wilcoxon p=0.062
+    occlude+10   dAcc -7.41 pts  95% CI [-9.81, -5.05]  excludes 0   paired sd 2.44  wilcoxon p=0.062
+    lesion_only  dAcc -2.76 pts  95% CI [-4.77, -0.59]  excludes 0   paired sd 3.73  wilcoxon p=0.062
+
+======================================================================
+smallcnn  (128px, lr 0.001, 3 seeds x 5 folds, flips+rot90)
+
+  intact       F1 0.6021 +- 0.0191   acc 0.6141   AUROC 0.6519   per-fold ['0.637', '0.579', '0.596', '0.595', '0.603']
+  occlude      F1 0.5537 +- 0.0194   acc 0.5597   AUROC 0.5796   per-fold ['0.573', '0.555', '0.563', '0.517', '0.561']
+  occlude+10   F1 0.5320 +- 0.0287   acc 0.5508   AUROC 0.5694   per-fold ['0.552', '0.543', '0.561', '0.480', '0.523']
+  lesion_only  F1 0.5387 +- 0.0148   acc 0.5524   AUROC 0.5760   per-fold ['0.539', '0.560', '0.535', '0.514', '0.545']
+
+  variance (intact): partition sd 0.85 pts, seed sd 2.64 pts
+
+  paired vs intact (lesion-clustered bootstrap, 2000 reps):
+    occlude      dAcc -5.47 pts  95% CI [-8.12, -2.73]  excludes 0   paired sd 3.23  wilcoxon p=0.062
+    occlude+10   dAcc -6.34 pts  95% CI [-9.17, -3.43]  excludes 0   paired sd 3.16  wilcoxon p=0.062
+    lesion_only  dAcc -6.21 pts  95% CI [-9.04, -3.32]  excludes 0   paired sd 4.78  wilcoxon p=0.062
+
+saved /kaggle/working/h1_results_v2.json

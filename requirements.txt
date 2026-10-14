@@ -1,0 +1,12 @@
+# Versions used for every reported result (Kaggle, NVIDIA T4)
+torch==2.10.0
+torchvision
+opacus==1.6.0
+captum==0.9.0
+numpy==2.0.2
+scipy
+scikit-learn
+h5py
+pillow
+pandas
+matplotlib

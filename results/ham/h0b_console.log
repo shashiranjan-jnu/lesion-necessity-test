@@ -1,0 +1,36 @@
+
+H0b | 1228 lesions before matching (mel 614, nv 614)
+
+caliper 0.40: 430 pairs, 1572 images
+    mask-only, caliper 0.40          macro-F1 0.5240   AUROC 0.5256
+     area     nv 0.282  mel 0.278  d=0.020
+     height   nv 0.629  mel 0.631  d=0.006
+     width    nv 0.546  mel 0.544  d=0.010
+
+caliper 0.30: 420 pairs, 1524 images
+    mask-only, caliper 0.30          macro-F1 0.5198   AUROC 0.5141
+     area     nv 0.283  mel 0.278  d=0.027
+     height   nv 0.630  mel 0.630  d=0.003
+     width    nv 0.547  mel 0.542  d=0.023
+
+caliper 0.20: 383 pairs, 1397 images
+    mask-only, caliper 0.20          macro-F1 0.5276   AUROC 0.5346
+     area     nv 0.279  mel 0.273  d=0.032
+     height   nv 0.624  mel 0.623  d=0.006
+     width    nv 0.541  mel 0.535  d=0.027
+
+caliper 0.10: 230 pairs, 853 images
+    mask-only, caliper 0.10          macro-F1 0.5466   AUROC 0.5577
+     area     nv 0.240  mel 0.239  d=0.009
+     height   nv 0.575  mel 0.578  d=0.013
+     width    nv 0.492  mel 0.492  d=0.001
+
+caliper 0.05: 72 pairs, 258 images
+    mask-only, caliper 0.05          macro-F1 0.5014   AUROC 0.4912
+     area     nv 0.225  mel 0.224  d=0.005
+     height   nv 0.552  mel 0.562  d=0.044
+     width    nv 0.464  mel 0.462  d=0.009
+
+saved 840 matched lesion ids (caliper 0.3) -> /kaggle/working/ham_matched_ids.npy
+Pick the largest caliper whose mask-only macro-F1 is <= ~0.53 and
+whose d values are all below ~0.10; that is the working subset.

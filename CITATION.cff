@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "A Lesion-Necessity Test for Public Imaging Benchmarks: Brain Tumor MRI Classification Without the Tumor (code)"
+type: software
+version: 1.0.0
+license: MIT
+authors:
+  - family-names: Ranjan
+    given-names: Shashi
+    affiliation: "School of Computer and Systems Sciences, Jawaharlal Nehru University, New Delhi, India"
+    orcid: "https://orcid.org/0009-0002-4069-5399"
+  - family-names: "N"
+    given-names: Poonguzhali
+    affiliation: "School of Computer and Systems Sciences, Jawaharlal Nehru University, New Delhi, India"
+    orcid: "https://orcid.org/0009-0007-6247-0517"
+repository-code: "https://github.com/shashiranjan-jnu/lesion-necessity-test"
+keywords:
+  - benchmark validation
+  - shortcut learning
+  - explainable artificial intelligence
+  - saliency map evaluation
+  - data curation
+  - magnetic resonance imaging

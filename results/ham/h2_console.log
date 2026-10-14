@@ -1,0 +1,26 @@
+H2 | fold 0, seed 1, 150 test images
+
+  intact  (chance pointing = mean mask area = 0.2635)
+  method        pointing    energy       IoU
+  gradcam          0.653     0.365     0.379
+  ig               0.220     0.215     0.149
+  smoothgrad       0.420     0.245     0.160
+
+  lesion_only  (chance pointing = mean mask area = 0.2635)
+  method        pointing    energy       IoU
+  gradcam          0.627     0.381     0.393
+  ig               0.493     0.273     0.173
+  smoothgrad       0.627     0.301     0.184
+
+  untrained  (chance pointing = mean mask area = 0.2635)
+  method        pointing    energy       IoU
+  gradcam          0.693     0.353     0.406
+  ig               0.533     0.256     0.165
+  smoothgrad       0.680     0.300     0.183
+
+  parameter randomisation (Spearman, trained vs untrained maps):
+    gradcam      +0.318
+    ig           +0.019
+    smoothgrad   +0.017
+
+saved /kaggle/working/h2_attribution.json
